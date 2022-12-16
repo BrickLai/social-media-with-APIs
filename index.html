@@ -13,180 +13,33 @@
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
             <link rel="stylesheet" href="assets/style/index.css" media="screen"> 
             <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
+            <script src="./assets/script/index.js" defer></script>
             <title>Zhaoyu Li's personal space</title>
         </head>
         <body>
-            <header>
-                <div class="head">
-                    
-                    <div>
-                        <h1><a href="./index.html">ZhaoyuLi</a></h1>
-                    </div>
-                    <nav>
-                    <ul class="nav-links">
-                        <li><a href="#a01">Blogs</a></li>
-                        <li><a href="#a02">About</a></li>
-                        <li><a href="#a03">Contacts</a></li>
-                    </ul>
-                    </nav>
-                    <input type="checkbox" id="check">
-                    <label for="check" class="checkbtn">
-                        <i class="fas fa-bars"></i>
-                    </label>
-                </div>
-            </header>
-            
-            <div class="overlay">
-                <div class="text-01">
-                    <div class="introduction-01">
-                        <p class="hello"><span>Hello World</span></p>
-                        <p class="welcome"><span>Welcome to Zhaoyuli's personal website</span></p> 
-                    </div>
-                </div>
-            </div>
-            <section>
-                <div class="blog">
-                    <div>
-                        
-                        <p class="text-04" id="a01">Personal Blog</p>
-                        <a class="blogmore" href="#a01">More>></a>
-                    </div>
-                    <div class="blog-02">
-                        <div class="text-03">
-                            <div class="img-01">
-                                <img src="./assets/img/gary-corken-XhMUkhDpmE8-unsplash1.jpg">
-                            </div>
-                            <div>
-                                <p>Zhaoyu Li: My tourism from Winnipeg to Banff National park in Alberta</p>
-                            </div>
+                <div class="loginbg">
+                    <div class="loginarea">
+                        <div class="left-img">
+                            <img class="bluebird" src="./assets/img/bluebird.png">
                         </div>
-                        <div class="text-03">
-                            <div class="img-01">
-                                <img src="./assets/img/veronique-trudel-GVSdHyva7ds-unsplash1.jpg">
+                        <div class="right-content" id="overlay">
+                            <div class="login-info">
+                                <h2>Welcome</h2>
+                                <input type="email" placeholder="Email" class="email-input">
+                                <input type="password" placeholder="Password" class="pwd-input">
+                                <a href="#">Forgot password?</a>
                             </div>
-                            <div>
-                                <p>Zhaoyu Li: In Canada, what did I prepared to spend the first winter in Canada?</p>
+                            <div class="login-btn">
+                                <input type="button" value="Login" class="login-button">
+                                <input type="button" class="sign-info" value="Sign up">
+                            </div>
+                            <div class="login-policy">
+                                <a href="#" >Copyright Policy</a>
+                                <a href="#" >Private Policy</a>
+                                <a href="#" >User Agreement</a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="myself">
-
-
-                    <div class="container">
-                        <div>
-                            <p class="text-04" id="a02">About Me</p>
-                        </div>
-                        <div class="row">
-                            <div class="padcontainer">
-                                <div class="column">
-                                    <div>
-                                        <h2>Welcome</h2>
-                                        <p>
-                                          Welcome to Zhaoyu Li's personal website, here you will know more about Zhaoyu Li, his hobbies, contact information and so on.
-                                        </p>
-                                    </div>
-                                    <div class="button-1">
-                                        <input type="button" id="More" value="More">
-                                    </div>
-                                </div>
-                            
-                            </div>
-                            <div class="padcontainer">
-                                <div class="column">
-                                    <div>
-                                        <h2>Hobbies</h2>
-                                        <p>
-                                            Zhaoyu likes reading, watching movies, playing computer games, hiking, and bicycle riding, he likes to explore some new fields, and learning coding is also a kind of exploring for him. 
-                                                                                    </p>
-                                    </div>
-                                    <div class="button-2">
-                                        <input type="button" id="More" value="More">
-                                    </div>
-                                </div>
-                           </div>
-                           <div class="padcontainer">
-                                <div class="column">
-                                    <div>
-                                        <h2>About me</h2>
-                                        <p>
-                                            Zhaoyu Li is a student who lived in Shenzhen, china before and now studies at MITT                                            </p>
-                                    </div>
-                                    <div class="button-3">
-                                        <input type="button" id="More" value="More">
-                                    </div>
-                                </div>
-                           </div>
-                           <div class="padcontainer">
-                            <div class="column">
-                                <div>
-                                    <h2>Contact</h2>
-                                    <p>
-                                        Click to contact Zhaoyu Li directly.
-                                    </p>
-                                </div>
-                                <div class="button-4">
-                                    <input type="button" id="More" value="More">
-                                </div>
-                            </div>
-                           </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact">
-                    <div>
-                        <p class="text-04" id="a03">Contact</p>
-                        <p class="text-05">For more information, feel free to contact</p>
-                    </div>
-                    <div class="contact-01">
-                        <form>
-                            <div class="contact-02">
-                                <div class="contact-03">
-                                    <input type="text" id="user-first " placeholder="First name*">
-                                    <input type="text" id="user-last" placeholder="Last name*">
-                                    <input type="email" id="email"
-                                    placeholder="Email (lizhaoyu@gmail.com)*">
-                                    <input type="text" id="phone" placeholder="Phone (123-456-7890)">
-                                </div>
-                                <div class="contact-04">
-                                    <textarea type="text" class="textfield-01" placeholder="Entry your message"></textarea>
-                                    <input type="button" id="submit" value="Submit">
-                                </div>
-                                
-                                <div>
-                                    
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <footer>
-                    <div class="foot">
-                        <div class="platforms">
-                            <div class="platform-2">
-                                <a href="https://github.com/BrickLai" target="_blank">
-                                    <i class="fa-brands fa-github"></i>
-                                </a>
-                            </div>
-                            <div class="platform-1">
-                                <a href="https://pt-br.facebook.com/people/Brick-Lai/100011865813516/?sk=photos" target="_blank">
-                                    <i class="fa-brands fa-square-facebook"></i>
-                                </a>
-                            </div>
-                            <div class="platform-3">
-                                <a href="https://www.youtube.com/channel/UCIbq3ZFEJUAl8kqZIBpm3zA/featured" target="_blank">
-                                    <i class="fa-brands fa-youtube"></i>
-                                </a>
-                            </div>       
-                        </div>            
-                        <p style="color:#fff">Zhaoyu Li &copy; 2022</p>   
-                    </div>
-                                
-                </footer>
-            </section>
-
-           
-
+              </div>
         </body>
     </html>
